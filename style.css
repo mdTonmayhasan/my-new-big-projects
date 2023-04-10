@@ -1,0 +1,606 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Merriweather:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.padding-40{
+    padding: 40px;
+}
+
+/* header option design */ 
+ 
+#headoption{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background: #ECF2FF;
+    align-items: center;
+}
+#headoption{
+    box-shadow: 10px 10px 3px #5555553b;
+    padding: 0 40px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#headoption img{
+  width: 150px;
+}
+#headoption #navbar{
+    transition: 0.5s ease;
+}
+#headoption #navbar li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#headoption #navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+#headoption #navbar a:hover  {
+   color:#245953 ;
+}
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px; 
+    border-radius: 5px;
+    background: #9A208C;
+}
+
+#navigation{
+    display: none;
+}
+
+#navbar.active{
+    right: 0px;
+}
+
+#close{
+    position: absolute;
+    font-size: 30px;
+    top: 20px;
+    left: 10px;
+    display: none;
+}
+
+#close:active{
+    color: cadetblue;
+}
+
+/* section hero deisgn  */
+
+#hero{
+    background-image: url(img/hero/H1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    animation: change 8000ms  infinite ease-in-out;
+    
+}
+
+
+@keyframes change{
+    10%{
+        background-image: url(img/hero/H1.jpg);
+    }
+    20%{
+        background-image: url(img/hero/H2.jpg);
+    }
+    40%{
+        background-image: url(img/hero/H3.jpg);
+    }
+    60%{
+        background-image: url(img/hero/H4.jpg);
+    }
+    80%{
+        background-image: url(img/hero/H5.jpg);
+    }
+}
+
+
+#hero .text-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+    color:#42a7af;
+}
+
+#hero .text-hero h4{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+#hero .text-hero h2{
+    color: rgb(6, 160, 232);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#hero .text-hero button{
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: red;
+    margin-top: 30px;
+    border-radius: 13px;
+    width: 160px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#hero .text-hero button:hover{
+    background-color: #245953;
+}
+
+
+/* product-icon design */
+
+#product-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#product-icon .iconN1{
+    border: 1px solid greenyellow;
+    width: 170px ;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #55555557;
+    transition: 0.5s ease;
+}
+
+#product-icon .iconN1:hover{
+    box-shadow: 10px 10px 10px #55555506;
+}
+
+
+/* product service design */
+
+#product-service{
+    text-align: center;
+}
+
+#product-service h2{
+    font-weight: 600;
+    font-size: 45px;
+}
+
+
+#product-service .product-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+#product-service .product-content .shirt-server{
+  width: 260px;
+  height: auto;
+  padding: 20px 20px  ;
+  background: white;
+  margin-top: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(172, 255, 47, 0.555);
+  box-shadow: 10px 10px 15px #55555582;
+  transition: 0.5s ease;
+}
+
+#product-service .product-content .shirt-server:hover{
+    box-shadow: 10px 10px 15px #55555508;
+}
+
+#product-service .product-content .shirt-server img{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#product-service .order{
+    text-align: start;
+}
+
+#product-service .order span{
+  font-size: 14px;
+  color: #245953;
+}
+
+#product-service .order h2{
+  font-size: 20px;
+  color: rgb(169, 24, 128);
+  padding-top: 5px;
+}
+
+#product-service .order h6{
+  font-size: 15px;
+}
+
+#product-service .order ul {
+    display: flex;
+}
+
+#product-service .order .star  i{
+    color: #faf336f5;
+}
+#product-service .order .fa-cart-shopping{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(20, 62, 120);
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(251, 239, 219);
+    margin-left: 180px;
+    margin-top: -50px;
+}
+   
+
+/* banner design in home page */
+
+
+#banner{
+    background-image: url(img/all\ banner/b1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#banner button{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: #245953;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.4s ease;
+    margin-top: 20px;
+}
+
+#banner button:hover{
+    background: #e80dce;
+}
+
+#banner h4{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 400;
+    color: green;
+    font-size: 20px;
+}
+
+#banner h2{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/* banner style design */
+
+#banner-style{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner-style .style1{
+    background-image: url(img/style/st1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 70vh;
+    width: 48%;
+    text-align: center;
+    padding-top: 180px;
+    color: #fff;
+}
+
+#banner-style .style1 button{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: aqua;
+    transition: 0.4s ease;
+}
+
+#banner-style .style2 button{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background:red;
+    transition: 0.4s ease;
+}
+
+#banner-style .style1 button:hover{
+    background: none;
+    border: 1px solid aqua;
+    color: #fff;
+}
+
+
+
+
+#banner-style .style2 button:hover{
+    background: none;
+    border: 1px solid greenyellow;
+    color: #fff;
+}
+
+
+
+
+#banner-style .style2{
+    background-image: url(img/style/st2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 70vh;
+    width: 48%;
+    text-align: center;
+    padding-top: 180px;
+    color: greenyellow;
+}
+
+/* gril-style design */
+
+#gril-style{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#gril-style .gril1{
+  background-image: url(img/style/st3.jpg);
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  text-align: center;
+  padding-top: 50px;
+  color: cornsilk;
+}
+
+#gril-style .gril2{
+  background-image: url(img/style/st4.jpg);
+  height: 40vh;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 50px;
+  color: cornsilk;
+}
+
+#gril-style .gril3{
+  background-image: url(img/style/st5.jpg);
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  text-align: center;
+  padding-top: 50px;
+  color: cornsilk;
+}
+
+
+/* newlleter sing page */
+
+#sing-up{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20vh;
+    background: #245953;
+}
+
+#sing-up .sing-men{
+    color: #fff;
+}
+
+#sing-up .sing-men h2{
+    font-size: 24px;
+}
+#sing-up .sing-men p{
+    color: #42a7af;
+}
+#sing-up .sing-men span{
+    color: coral;
+}
+
+
+#sing-up .input {
+  width: 400px;
+}
+
+#sing-up .input input{
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#sing-up .input button{
+    padding: 10px;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    background: rgb(242, 231, 13);
+    transition: 0.4s ease;
+}
+
+#sing-up .input button:hover{
+    background: #e80dce;
+}
+
+
+/* footer all-about design */
+
+
+footer{
+    background: black;
+}
+footer .all-about{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #dd870e;
+    padding: 70px 20px;
+}
+
+footer .all-about .img img{
+ width: 150px;
+}
+
+footer .all-about ul li{
+    list-style: none;
+}
+
+footer .all-about ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+footer .app-download{
+    display: flex;
+    justify-content:space-between ;
+    color: #fff;
+}
+
+footer .app-download .play-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .app-download .pay img{
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+footer .app-download .app img{
+    margin-left: 15px;
+    border: 1px solid rgb(209, 209, 10);
+    border-radius: 10px;
+}
+
+footer .app-download .app1 i{
+   color: #fff;
+   cursor: pointer;
+   width: 40px;
+   height: 40px;
+   background: #245953;
+   text-align: center;
+   padding-top: 10px;
+   font-size: 20px;
+   border-radius: 50%;
+   transition: 1s ease;
+}
+
+
+footer .app-download .app1 i:hover{
+    transform: rotate(200deg);
+}
+
+footer h4{
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+
+
+
+/* all media query use css */
+
+@media (max-width:992px) {
+    
+}
+
+
+
+@media (max-width:799px) {
+    #navbar{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     position: fixed;
+     top: 0px;
+     right: -300px;
+     width: 280px;
+     height: 100vh;
+     background: white;
+     padding: 80px 40px;
+
+    }
+
+    #navigation{
+        display: block;
+        font-size: 30px;
+    }
+
+    #close{
+        display: block;
+    }
+}
+@media (max-width:992px) {
+    
+}
+@media (max-width:992px) {
+    
+}
+@media (max-width:992px) {
+    
+}
+
+
