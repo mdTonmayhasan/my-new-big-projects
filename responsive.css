@@ -1,0 +1,207 @@
+
+/* all media queri use */
+
+@media (max-width:984px) {
+    #gril-style{
+        display: flex;
+        justify-content: center;
+    }
+    #gril-style .gril1{
+       height: auto;
+       padding-bottom: 40px;
+    }
+    #gril-style .gril2{
+       height: auto;
+       padding-bottom: 40px;
+       margin-left: 30px;
+    }
+    #gril-style .gril3{
+       height: auto;
+       padding-bottom: 40px;
+       margin-top: 50px;
+    }
+}
+
+@media (max-width:878px) {
+    #product-service .product-content {
+        display: flex;
+        justify-content: center;
+    }
+    .shirt-server{
+        margin-left: 10px;
+    }
+
+    .blog{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #product-list .product-info {
+        margin-top: 100px;
+        
+    }
+
+}
+@media (max-width:799px) {
+
+    #navbar{
+        width: 250px;
+        height: 100vh;
+        background: white;
+        position: fixed;
+        right: -250px;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 40px;
+    }
+
+    #navbar li{
+      margin-top: 20px;
+    }
+
+    #nav{
+        display: block;
+        font-size: 30px;
+    }
+
+
+    #close{
+       display: block;
+    }
+
+    #hero{
+        height: auto;
+        padding: 40px;
+    }
+
+
+
+    #product-service .product-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+      #product-icon .iconN1:nth-child(5){
+          display: none;
+      }
+
+    .product-content .shirt-server{
+        margin-left: 80px;
+    }
+    
+    .product-content .shirt-server:nth-child(9){
+        display: none;
+    }
+
+    #banner{
+        height: auto;
+        padding:30px;
+    }
+
+    #banner-style .style1{
+        height: auto;
+        padding: 50px;
+    }
+
+    #banner-style .style2{
+        height: auto;
+        padding: 50px;
+    }
+     
+    #gril-style .gril1{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    #gril-style .gril2{
+       margin-top: 30px;
+    }
+    #gril-style .gril3{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    #sing-up{
+        height: auto;
+    }
+
+    
+    .show3-blog{
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:688px) {
+
+    
+    #banner-style .style1{
+       width: 100%;
+    }
+
+    #banner-style .style2{
+        width: 100%;
+        margin-top: 30px;
+     }
+
+
+    .app-download{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app3{
+        margin-top: 30px;
+    }
+
+    .show3-blog{
+        margin-top: 20px;
+    }
+
+    #info .map iframe{
+        width: 100%;
+    }
+
+    #product-service .product-content .shirt-server{
+        height: 500px;
+        padding-bottom: 20px;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      #product-icon .icon-set{
+        margin: auto;
+    }
+    #product-icon .icon-set .iconN1{
+       margin-top: 20px;
+    }
+   
+    #product-list .single-pro-img{
+        width: 100%;
+        
+    }
+}
+
+@media (max-width:472px) {
+    .input button{
+        margin-top: 30px;
+    }
+
+    .play-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app{
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+
+    #product-list .product-info button{
+        margin-top: 20px;
+    }
+}

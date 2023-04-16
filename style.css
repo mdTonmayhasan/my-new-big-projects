@@ -30,7 +30,7 @@ html{
     box-shadow: 10px 10px 3px #5555553b;
     padding: 0 40px;
     position: sticky;
-    top: 0px;
+    top: -1px;
     left: 0px;
 }
 #headoption img{
@@ -68,25 +68,23 @@ html{
     background: #9A208C;
 }
 
-#navigation{
+#nav{
     display: none;
+}
+
+
+#close{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
 }
 
 #navbar.active{
     right: 0px;
 }
 
-#close{
-    position: absolute;
-    font-size: 30px;
-    top: 20px;
-    left: 10px;
-    display: none;
-}
-
-#close:active{
-    color: cadetblue;
-}
 
 /* section hero deisgn  */
 
@@ -162,7 +160,7 @@ html{
 
 /* product-icon design */
 
-#product-icon{
+#product-icon .icon-set{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -253,17 +251,21 @@ html{
 }
 
 #product-service .order .star  i{
-    color: #faf336f5;
+    color: #e4ad13c8;
 }
 #product-service .order .fa-cart-shopping{
     width: 40px;
     height: 40px;
-    background-color: rgb(20, 62, 120);
+    background-color: rgba(0, 106, 255, 0.22);
     padding: 10px;
     border-radius: 50%;
-    color: rgb(251, 239, 219);
-    margin-left: 180px;
-    margin-top: -50px;
+    color: rgb(11, 97, 245);
+}
+
+.product-content .incon-order{
+    display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
 }
    
 
@@ -276,12 +278,13 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 40vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
 }
+
 
 #banner button{
     padding: 10px;
@@ -328,7 +331,7 @@ html{
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    height: 70vh;
+    height: auto;
     width: 48%;
     text-align: center;
     padding-top: 180px;
@@ -378,11 +381,12 @@ html{
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    height: 70vh;
+    height: auto;
     width: 48%;
     text-align: center;
     padding-top: 180px;
     color: greenyellow;
+    padding-bottom: 60px;
 }
 
 /* gril-style design */
@@ -395,7 +399,7 @@ html{
 
 #gril-style .gril1{
   background-image: url(img/style/st3.jpg);
-  height: 40vh;
+  height:auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -437,7 +441,7 @@ html{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    height: 20vh;
+    height: auto;
     background: #245953;
 }
 
@@ -512,95 +516,388 @@ footer .all-about ul li a{
 
 footer .app-download{
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     color: #fff;
 }
 
-footer .app-download .play-img{
+footer .app-download .app1{
+    width: 200px;
+}
+footer .app-download .app2{
+    width: 300px;
+}
+
+
+.pay img{
+    border-radius: 20px;
+    border: 1px solid green;
+}
+.app img{
+    border-radius: 20px;
+    border: 1px solid green;
+    margin-left: 20px;
+}
+.play-img{
+    display: flex;
+    justify-content: space-between;
+}
+footer .app-download .app3{
+    width: 200px;
+}
+
+footer h4{
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+
+/* shop-page design */
+
+#banner-1{
+    background-image: url(img/all\ banner/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#banner-1 h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+#banner-1 h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+/* blog page design */
+
+#banner-3{
+    background-image: url(img/all\ banner/b3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#banner-3 h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+#banner-3 h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+#blog-style .blog-img{
+    background-image: url(img/blog/bd.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+
+}
+
+
+
+#blog-style .blog .show1-blog{
+    background-image: url(img/blog/bd1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 40vh;
+}
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top: 30px;
+}
+
+#blog-style .blog .show2-blog{
+    background-image: url(img/blog/bd2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 40vh;
+}
+#blog-style .blog .show3-blog{
+    background-image: url(img/blog/bd3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 40vh;
+}
+
+
+/* ========= about page design ========= */
+
+#banner-4{
+    background-image: url(img/about/ab.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#banner-4 h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+#banner-4 h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.textcount{
+    width: 400px;
+    margin-top: 100px;
+}
+
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image{
+    width: 400px;
+}
+#video h2{
+    text-align: center;
+}
+
+#video span{
+    color: #245953;
+}
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#video video{
+    width: 500px;
+    border-radius: 20px;
+}
+
+
+/* ===========  contact design ======= */
+
+.contact-seson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+
+#info .info ul li{
+  color: #245953;
+  background: white;
+  box-shadow: 10px 10px 10px #55555558;
+  list-style: none;
+  margin-top: 20px;
+  padding: 8px;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+
+#info .map iframe{
+    border-radius: 10px;
+}
+
+#sing-stem .sing-menu{
+    width: 400px;
+}
+
+#sing-stem .sing-menu input{
+ width: 100%;
+ padding: 10px;
+ outline: none;
+ border: none;
+ box-shadow: 10px 10px 10px #5555554f;
+ margin-top: 20px;
+ border: 1px solid yellow;
+ border-radius: 10px;
+}
+
+#sing-stem .sing-menu textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #245953;
+    margin-top: 20px;
+}
+
+#sing-stem .sing-menu .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+#sing-stem .sing-menu button{
+  padding: 10px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background: #dd870e;
+  border-radius: 5px;
+}
+
+
+/* ===========  crt design ======= */
+
+
+.produc-quantity{
+    box-shadow:  5px 5px 5px #5555554a;
+    padding: 10px;
+    border: 1px solid yellow;
+    overflow-x: auto;
+}
+#quantity table thead tr td {
+    width: 200px;
+}
+#quantity thead{
+
+    border-top: 1px solid rgb(0, 210, 87);
+    border-bottom: 1px solid rgb(0, 210, 87);
+    font-size: 20px;
+}
+#quantity thead tr td{
+    text-transform: uppercase;
+}
+#qunatity table{
+    width: 100%;
+    border-collapse: collapse;
+    white-space: normal;
+    table-layout: fixed;
+}
+
+#quantity table tbody tr td img{
+    width: 50px;
+    margin-top: 20px;
+}
+#quantity table tbody tr td input{
+    width: 50px;
+}
+
+#quantity table tbody tr td {
+    width: 200px;
+}
+
+
+
+/* ===========  product-set design ======= */
+
+#product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#product-list .single-pro-img{
+    width: 400px;
+}
+
+#product-list .choice-img{
     display: flex;
     justify-content: space-between;
 }
 
-footer .app-download .pay img{
-    border: 1px solid green;
-    border-radius: 5px;
+#product-list .choice-img{
+    flex-basis: 24%;
+    height: 50px;
+    margin-top: 10px;
 }
 
-footer .app-download .app img{
-    margin-left: 15px;
-    border: 1px solid rgb(209, 209, 10);
-    border-radius: 10px;
+#product-list .choice-img img{
+  width: 100%;
+  height: 135px;
 }
 
-footer .app-download .app1 i{
-   color: #fff;
-   cursor: pointer;
-   width: 40px;
-   height: 40px;
-   background: #245953;
-   text-align: center;
-   padding-top: 10px;
-   font-size: 20px;
-   border-radius: 50%;
-   transition: 1s ease;
+#product-list .product-info {
+    width: 400px;
+    
 }
 
-
-footer .app-download .app1 i:hover{
-    transform: rotate(200deg);
+#product-list .product-info h4 {
+    color: #9A208C;
 }
 
-footer h4{
-    text-align: center;
+#product-list .product-info h3 {
+    color:#245953;
+}
+
+#product-list .product-info h2 {
+    color:rgba(16, 74, 233, 0.628);
+    font-weight: 600;
+}
+#product-list .product-info select {
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px #55555567;
+    border: 1px solid yellow;
+    outline: none;
+    border-radius: 4px;
+}
+#product-list .product-info input {
+    width: 100px;
+    padding: 8px;
+    border: none;
+    box-shadow: 5px 5px 5px #55555567;
+    border: 1px solid rgb(204, 90, 14);
+    outline: none;
+    border-radius: 4px;
+}
+
+#product-list .product-info button{
+    width: 100px;
+    padding: 8px;
+    border: none;
+    box-shadow: 5px 5px 5px #55555567;
+    border: 1px solid rgb(218, 153, 13);
+    outline: none;
+    font-size: 16px;
+    background: #d18605;
+    border-radius: 4px;
     color: #fff;
-    padding-top: 30px;
-    font-size: 20px;
-}
-
-
-
-
-/* all media query use css */
-
-@media (max-width:992px) {
+    font-weight: 500;
+    transition: 0.4s ease;
     
 }
 
-
-
-@media (max-width:799px) {
-    #navbar{
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     justify-content: flex-start;
-     position: fixed;
-     top: 0px;
-     right: -300px;
-     width: 280px;
-     height: 100vh;
-     background: white;
-     padding: 80px 40px;
-
-    }
-
-    #navigation{
-        display: block;
-        font-size: 30px;
-    }
-
-    #close{
-        display: block;
-    }
+#product-list .product-info button:hover{
+    background: #9A208C;
 }
-@media (max-width:992px) {
-    
-}
-@media (max-width:992px) {
-    
-}
-@media (max-width:992px) {
-    
-}
-
-
